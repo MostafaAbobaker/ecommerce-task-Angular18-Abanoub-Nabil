@@ -1,0 +1,8 @@
+<div class="card pt-3" >
+  <img [src]="product.image" class="card-img-top border-bottom pb-2" alt="..." style=" width: 100%;height: 300px;object-fit: contain;">
+  <div class="card-body">
+    <h4 class="card-title" style="height: 50px;-webkit-line-clamp: 1;  -webkit-box-orient: vertical;    overflow: hidden;   text-overflow: ellipsis;   line-height: 1.7;">{{product.title}}</h4>
+      <h6>{{product.price | currency}}</h6>
+    <p class="card-text" style="height: 150px; -webkit-line-clamp: 2;  -webkit-box-orient: vertical;    overflow: hidden;   text-overflow: ellipsis;   line-height: 1.7;">{{product.description}}</p>
+  </div>
+</div>

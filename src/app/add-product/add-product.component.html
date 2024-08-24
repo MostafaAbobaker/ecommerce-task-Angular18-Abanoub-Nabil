@@ -1,0 +1,23 @@
+
+  <h3 class="border-bottom text-primary">Add New Product</h3>
+  <div class="mb-3 col-lg-4">
+    <label for="exampleFormControlInput1" class="form-label">Title Product</label>
+    <input type="text" class="form-control" [(ngModel)]="title">
+  </div>
+  <div class="mb-3 col-lg-4">
+    <label for="exampleFormControlInput1" class="form-label">Price Product</label>
+    <input type="text" class="form-control" [(ngModel)]="priceString">
+  </div>
+  <div class="mb-3 col-lg-4">
+    <label for="exampleFormControlInput1" class="form-label">Image Product</label>
+    <input type="text" class="form-control" [(ngModel)]="image">
+  </div>
+  <div class="mb-3 col-lg-12">
+    <label for="exampleFormControlTextarea1" class="form-label">Description Product</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="description"></textarea>
+  </div>
+  <div class="col-lg-12">
+
+    <button class="btn btn-success w-100" (click)="onAddProduct()">Add Product</button>
+  </div>
+
